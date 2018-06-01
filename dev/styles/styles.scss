@@ -1,0 +1,16 @@
+@import "_setup.scss";
+@import "_utils.scss";
+@import "_typography.scss";
+@import "components/_header.scss";
+@import "components/_about.scss";
+@import "components/_skills.scss";
+@import "components/_work.scss";
+@import "components/_contact.scss";
+
+
+
+
+body {
+    background: black;
+    color: white;
+}

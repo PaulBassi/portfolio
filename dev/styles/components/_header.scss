@@ -1,0 +1,82 @@
+header {
+    height: 100vh;
+    // background: black;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../../public/assets/louise.jpg);
+    background-size: cover;
+    background-position: 0 -80px;
+}
+
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+// HEADERTOP STYLES
+
+.headerTop {
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    // border-bottom: 1px solid grey;
+    
+    .wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    img.logo {
+        width :50px;
+    }
+    nav {
+        width: 50%;
+        display: inline-block;
+
+    }
+    nav ul { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+
+        list-style: none;
+        li a {
+            transition: 0.5s;
+            text-decoration: none;
+            color: white;
+            @include fontSize(16);
+            &:hover {
+                color: $yellow;
+            }
+        }
+        li a.firstNavItem {
+            color: $yellow;
+        }
+    }
+}
+
+// HEADER MAIN STYLES
+
+.headerMain {
+    text-align: center;
+    padding-top: 26%;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 800;
+    span {
+        color: $yellow;
+    }
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    display: inline;
+    border-bottom: 2px solid $yellow;
+}
+

@@ -1,5 +1,4 @@
-const hello = function () {
-    console.log("hey");
-}
-
-hello();
+$(document).ready(function() {
+    window.location.hash= '';
+    console.log(`ready`);
+});
