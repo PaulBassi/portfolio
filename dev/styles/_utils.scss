@@ -2,6 +2,22 @@ $headerFont: 'Raleway', sans-serif;
 $bodyFont: 'Montserrat', sans-serif;
 
 
-$yellow: #FFCF00;
+$yellow: #ffbd26;
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+//--------------------------
+// RESPONSIVE MEDIA QUERIES
+// -------------------------
+
+ @media only screen and (max-width: 925px) {
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+ }
 
 

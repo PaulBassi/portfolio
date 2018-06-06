@@ -6,6 +6,7 @@
 @import "components/_skills.scss";
 @import "components/_work.scss";
 @import "components/_contact.scss";
+@import "components/_footer.scss";
 
 
 
@@ -13,4 +14,9 @@
 body {
     background: black;
     color: white;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
 }

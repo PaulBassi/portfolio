@@ -1,0 +1,27 @@
+footer {
+    background:black;
+    height: 5vh;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        a {
+            outline: none;
+        }
+        img.logo {
+            width: 30px;
+            margin-right: 30px;
+        }
+        p {
+            margin: 0;
+            margin-right: 30px;
+    
+        }
+    }
+}
+
+//--------------------------
+// RESPONSIVE MEDIA QUERIES
+// -------------------------
+

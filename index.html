@@ -4,27 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FAVICONS START -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICONS END -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="./public/styles/style.css">
     <title>Paul Bassi</title>
 </head>
 <body>
     <!-- HEADER STARTS -->
-    <header> 
+    <header id="home"> 
         <div class="headerTop">
             <div class="wrapper">
-                <a href ="#"><img class="logo" src="public/assets/pbassiLogo.png" alt=""></a>
+                <a href ="#home"><img class="logo" src="./public/assets/pbassiLogo.png" alt=""></a>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="#" class="firstNavItem">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" class="firstNavItem">Home</a></li>
+                        <li><a href="#about" class="">About</a></li>
+                        <li><a href="#work" class="">Work</a></li>
+                        <li><a href="#skills" class="">Skills</a></li>
+                        <li><a href="#contact" class="">Contact</a></li>
                     </ul>
-                </nav>            
+                </nav>   
+
+                <!-- hamburger menu starts -->
+                    <nav class ="hamburgerNav" role="hamburgerNav">
+                      <div id="menuToggle">
+                     
+                        <input type="checkbox" />
+                        
+                        <span></span>
+                        <span></span>
+                        <span></span>
+    
+                        <ul id="menu">
+                            <li><a href="#home" class="firstNavItem">Home</a></li>
+                            <li><a href="#about" class="">About</a></li>
+                            <li><a href="#work" class="">Work</a></li>
+                            <li><a href="#skills" class="">Skills</a></li>
+                            <li><a href="#contact" class="">Contact</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                    <!-- hamburger menu ends -->
             </div>
+
         </div>
     
         <div class="headerMain">
@@ -42,10 +75,18 @@
             <h4>About Me</h4>
             <div class="aboutImageAndText">
                 <div class="aboutImage">
-                    <img class="headshot" src="public/assets/headshot.jpg" alt="">
+                    <img class="headshot" src="./public/assets/headshot.jpg" alt="">
                 </div>
                 <div class="aboutText">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias quibusdam, officiis architecto voluptates vero ipsa animi quod voluptate. Esse quisquam nam aliquam magni enim sit ipsa eos earum iure, perferendis assumenda commodi odio, ea delectus iusto ipsam natus expedita fugit nisi repellat? Consectetur, qui dolor dolorem voluptates distinctio porro iusto nostrum ducimus veritatis nemo sit aliquid esse exercitationem quisquam numquam est. Officiis, quae aliquam nostrum iure amet eaque ratione.</p>
+                    <p>Hi I’m Paul, a front-end web-developer based in Toronto. Prior to my time at HackerYou, I studied Civil Engineering, where I learned the importance and qualities necessary to being a team player while also honing my strategic thinking skills.</p> 
+
+                    <p>Civil Engineering was the spark that ignited my passion for ingenuity and innovation which I was able to fully realize in my pursuit of web-development and coding.</p>
+
+                    <p>When I’m not staring at my screen I’m still staring at my screen. With photography as my creative outlet, I often find myself looking into my viewfinder to capture landscape, candid, and the occasional hero shots of my classmates. Aside from the headshot, the images from my website are all locally sourced, straight from my camera to your screen.</p>
+
+                    <p>My curiosity is one of my biggest drivers and naturally propels me in seeking new ways to continuously expand my horizons.</p>
+
+                    <p>I’ve found my home amongst the machines  : - )</p>
                 </div>
             </div> 
         </div>
@@ -56,6 +97,111 @@
     <section class="work" id="work">
         <div class="wrapper">
             <h4>My Work</h4>
+            <div class="project imageLeft">
+                <h3 class="mobileProjectHeader">Lisbon</h3>
+                <img class="projectImac" src="./public/assets/lisbon.png" alt="">
+                <div class="projectText">
+                    <h3 class="projectTitle">Lisbon</h3>
+                    <h5>PSD Conversion</h5>
+                    <p>PSD conversion made fully responsive.</p>
+                    <div class="tags">
+                        <p>HTML</p>
+                        <p>Sass</p>
+                    </div>
+                    <div class="projectLinks">
+                        <a href ="#"><p>View Live</p></a>
+                        <a href ="#"><p>View Github</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project imageRight">
+                <h3 class="mobileProjectHeader">Beer Finder</h3>
+                <img class="projectImac" src="public/assets/beer.png" alt="">
+                <div class="projectText">
+                    <h3 class="projectTitle">Beer Finder</h3>
+                    <h5>Javascript Quiz</h5>
+                    <p>Beer-finder quiz built with Javascript that helps you find your beer-mate.</p>
+                    <div class="tags">
+                        <p>HTML</p>
+                        <p>Sass</p>
+                        <p>Javascript</p>
+                        <p>JQuery</p>
+                    </div>
+                    <div class="projectLinks">
+                        <a href ="#"><p>View Live</p></a>
+                        <a href ="#"><p>View Github</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project imageLeft">
+                <h3 class="mobileProjectHeader">nom.</h3>            
+                <img class="projectImac" src="./public/assets/nom.png" alt="">
+                <div class="projectText">
+                    <h3 class="projectTitle">nom.</h3>
+                    <h5>Project Type</h5>
+                    <p>A Javascript project that lets you search for recipes based on items you currently have. Powered by the Yummly API.</p>
+                    <div class="tags">
+                        <p>HTML</p>
+                        <p>Sass</p>
+                        <p>Javascript</p>
+                        <p>JQuery</p>
+                        <p>API</p>
+                    </div>
+                    <div class="projectLinks">
+                        <a href ="#"><p>View Live</p></a>
+                        <a href ="#"><p>View Github</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project imageRight">
+                <h3 class="mobileProjectHeader">Cinema</h3>         
+                <img class="projectImac" src="./public/assets/cinema.png" alt="">
+                <div class="projectText">
+                    <h3 class="projectTitle">Cinema</h3>
+                    <h5>Project Type</h5>
+                    <p>A React project that allows you to search for movies. Powered by the Movie DB API.</p>
+                    <div class="tags">
+                        <p>Sass</p>
+                        <p>React</p>
+                        <p>JSX</p>
+                        <p>Javascript</p>
+                        <p>API</p>
+                    </div>
+                    <div class="projectLinks">
+                        <a href ="#"><p>View Live</p></a>
+                        <a href ="#"><p>View Github</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project imageLeft">
+                <h3 class="mobileProjectHeader">Marvel</h3>
+                <img class="projectImac" src="./public/assets/marvel.png" alt="">
+                <div class="projectText">
+                    <h3 class="projectTitle">Marvel</h3>
+                    <h5>Project Type</h5>
+                    <p>Find comics for your favorite Marvel characters. A React project powered by the Marvel API.</p>
+                    <div class="tags">
+                        <p>Sass</p>
+                        <p>React</p>
+                        <p>JSX</p>
+                        <p>API</p>
+                        <p>Javascript</p>
+                        <p>Firebase</p>
+                        
+                        
+                        
+                    </div>
+                    <div class="projectLinks">
+                        <a href ="#"><p>View Live</p></a>
+                        <a href ="#"><p>View Github</p></a>
+                    </div>
+                </div>
+            </div>
+
             
 
         </div>
@@ -75,7 +221,7 @@
                     <li><i class="devicon-javascript-plain"></i></li>
                     <li><i class="devicon-react-original"></i></li>
                     <li><i class="devicon-github-plain"></i></li>
-                    <li><img src="public/assets/jquery.svg" alt=""></li>
+                    <li><img src="./public/assets/jquery.svg" alt=""></li>
                     <li><i class="devicon-css3-plain"></i></li>
                     <li><i class="devicon-git-plain"></i></li>
                     <li><i class="devicon-babel-plain"></i></li>
@@ -102,7 +248,57 @@
     <section class="contact" id="contact">
         <div class="wrapper">
             <h4>Contact Me</h4>
+                <div class="contactContainer">
+                    <div class="contactLinks">
+                        <div class="contactLinkColumn columnLeft">
+                            <h6>Location</h6>
+                            <p>Toronto, ON</p>
+                        </div>
+    
+                        <div class="contactLinkColumn columnMiddle">
+                        <h6>Email</h6>
+                        <a href="mailto:paulbassi7@gmail.com"><p class="emailLink">paulbassi7@gmail.com</p></a>
+                        </div>
+    
+                        <div class="contactLinkColumn columnRight">
+                        <h6>Social Media</h6>
+                        <div class="socialIcons">
+                            
+                            <a href="#" class="socialIcon"><i class="fab fa-github"></i></a>
+                            
+                            <a href="#" class="socialIcon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            
+                            <a href="#" class="socialIcon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                            <form action="https://formspree.io/paulbassi7@gmail.com" method="POST" name="contact-form" autocomplete="off" autocapitalize="on" autocorrect="off">
 
+                                <div class="formTop">
+                                    <label for="name" class="visuallyhidden">Your Name</label>
+                                    <input type="text" name="name" class="Name" placeholder="Your Name" id="name">
+                                    <label for="email" class="visuallyhidden">Your Email</label>
+                                    <input type="email" name="email" placeholder="Your Email" id="email" required="true">
+                            </div>
+    
+    
+    
+                            <label for="subject" class="visuallyhidden">Subject</label>
+                            <input type="subject" name="subject" placeholder="Subject" id="subject" required="true">
+    
+                            <label for="subject" class="visuallyhidden">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" style=""></textarea>
+    
+                            <input type="submit" value="Submit" class="submit">
+                        </form>
+                    </div>
+
+                </div>
             
         </div>
 
@@ -110,9 +306,23 @@
         
     </section>
     <!-- CONTACT SECTION ENDS -->
-    
+
+    <!-- FOOTER STARTS -->
+    <footer>
+        <div class="wrapper">
+            <a href ="#home"><img class="logo" src="./public/assets/pbassiLogo.png" alt=""></a>
+            <p>Paul Bassi &copy; 2018</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
     
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="public/scripts/site.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
+    <script src="./public/scripts/site.js"></script>
+
+
+    <!-- <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js“></script>
+    <script src=“public/scripts/site.js”></script> -->
 </body>
 </html>

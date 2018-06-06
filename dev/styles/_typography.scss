@@ -31,6 +31,7 @@ h4 {
     @include fontSize(30);
     text-transform: uppercase;
     text-align: center;
+
 }
 
 h5 {
@@ -40,4 +41,26 @@ h5 {
 p {
     font-family: $bodyFont;
     @include fontSize(16);
+}
+
+
+//--------------------------
+// RESPONSIVE MEDIA QUERIES
+// -------------------------
+
+
+@media only screen and (max-width: 725px) {
+    h1 {
+        @include fontSize(80);
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    h1 {
+        @include fontSize(44);
+    }
+    h2 {
+    @include fontSize(16);
+    }
 }

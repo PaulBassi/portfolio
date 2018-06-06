@@ -1,0 +1,253 @@
+.contact {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../../public/assets/peytoLake.jpg);
+    height: 95vh;
+    background-size: cover;
+    padding-top: 100px;
+    // background-position: 0 -160px;
+    .wrapper {
+        // padding: 2% 0 10% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h4 {
+        color: white;
+        display: inline-block;
+        border: 5px solid white;
+        padding: 15px;
+        margin-bottom: 9%;
+        margin-top: 0;
+        
+    }
+    .contactContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // background: rgba(0,0,0,0.3);
+    }
+}
+
+// CONTACT INFO STYLES
+
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 28.3%;
+    height: 330px;
+    padding: 15px;
+    text-align: right;
+    background: rgba(0,0,0,0.5);
+    .contactLinkColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h6 {
+        @include fontSize(20);
+        color: $yellow;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 50px;
+        color: white;
+    }
+}
+
+.emailLink {
+    transition: 0.5s;
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    a.socialIcon {
+        transition: 0.5s;
+        // height: 35px;
+        // width: 35px;
+        // border: 1px solid white;
+        // border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        @include fontSize(20);
+        color: white;
+        &:hover {
+            color: $yellow;
+            // border: 1px solid $yellow;
+        }
+    }
+}
+
+
+// CONTACT FORM STYLES
+
+.contactForm {
+    width: 61.6%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    height: 330px;
+    padding: 15px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: calc(100% - 30px);
+    label {
+        @include fontSize(18);
+    }
+    input, textarea {
+        // width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        @include fontSize(16);
+    }
+    .formTop {
+        display: flex;
+        justify-content: space-between;
+        input {
+            width: 47.5%;
+        }
+    }
+    input#name {
+
+    }
+    input#email {
+
+    }
+    input#subject {
+    }
+    textarea {
+        margin-bottom: 20px;
+        height: 150px;
+        resize: none;
+
+    }
+    input.submit {
+        width: 150px;
+        margin: 0 auto;
+        background: $yellow;
+        color: black;
+        &:hover {
+            background: lighten($yellow,10%);
+        }
+
+    }
+}
+
+//--------------------------
+// RESPONSIVE MEDIA QUERIES
+// -------------------------
+
+@media only screen and (max-width: 925px) {
+    .contact {
+       height: auto;
+    }
+
+    .contact .contactContainer {
+        flex-direction: column-reverse;
+    }
+    
+    .contactForm {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contactLinks {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: center;
+        p {
+            margin-bottom: 10px;
+        }
+        .contactLinkColumn{
+            width: 33.3%;
+        }
+        .columnLeft {
+            align-items: flex-start;
+        }
+        .columnMiddle {
+            align-items: center;
+        }
+        .columnRight {
+            align-items: center;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    form .formTop {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        input {
+            width: 100%;
+        }
+    }
+
+    .contactLinks {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+        .contactLinkColumn{
+            width: 50%;
+        }
+        .columnLeft {
+            // align-items: flex-start;
+            display: none;
+        }
+        .columnMiddle {
+            align-items: flex-start;
+        }
+        .columnRight {
+            align-items: flex-end;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+     .contactLinks {
+        width: 100%;
+        height: 160px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .contactLinkColumn{
+            width: 50%;
+        }
+        .columnLeft {
+            // align-items: flex-start;
+            display: none;
+        }
+        .columnMiddle {
+            align-items: center;
+        }
+        .columnRight {
+            align-items: center;
+        }
+    }
+}
+

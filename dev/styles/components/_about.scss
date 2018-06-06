@@ -1,5 +1,7 @@
 .about {
     background: white;
+    height: 100vh;
+    padding-top: 100px;
     .wrapper {
         padding: 2% 0 10% 0;
         display: flex;
@@ -9,21 +11,31 @@
     }
     h4 {
         color: black;
-        display: inline-block;
+        display: block;
         border: 5px solid black;
+        margin-top: 0;
+        // margin-top: 10%;
+        // margin-bottom: 20px;
         padding: 15px;
+        // width: 250px;
 
     }
 }
 
 .aboutImageAndText {
     display: flex;
+    align-items: center;
+    justify-content: center;
     .aboutImage {
-        width: 40%;
+        width: 30%;
     }
     .aboutText {
-        width: 60%;
+        width: 70%;
         color: black;
+        p {
+            @include fontSize(18);
+            line-height: 28px;
+        }
     }
 }
 
@@ -38,7 +50,6 @@
         width: 300px;
         height: 500px;
     }
-
 }
 
 img.headshot {
@@ -49,4 +60,106 @@ img.headshot {
     position: relative;
     z-index: 20;
 }
+
+//--------------------------
+// RESPONSIVE MEDIA QUERIES
+// -------------------------
+
+ @media only screen and (max-width: 1600px) {
+    .aboutImageAndText {
+        .aboutImage {
+            width: 35%;
+        }
+        .aboutText {
+            width: 65%;
+            p {
+                @include fontSize(16);
+            }
+        }
+    }
+}
+
+ @media only screen and (max-width: 1440px) {
+    .aboutImageAndText {
+        .aboutImage {
+            width: 40%;
+        }
+
+        .aboutImage {
+            position: relative; 
+            &::after {
+            content: "";
+                border: 5px solid $yellow; 
+                position: absolute;
+                z-index: 1;
+                left: 40px;
+                top: 20px;
+                width: 270px;
+                height: 400px;
+            }
+        }
+
+        img.headshot {
+            width: 270px;
+            height:350px;
+            object-fit: cover;
+            margin-top: 50px;
+            position: relative;
+            z-index: 20;
+        }
+
+        .aboutText {
+            width: 60%;
+        }
+    }
+}
+
+ @media only screen and (max-width: 1165px) {
+    .aboutImageAndText {
+        .aboutImage {
+            width: 40%;
+        }
+
+        .aboutText {
+            width: 60%;
+            color: black;
+            p {
+                line-height: 22px;
+            }
+        }
+      
+    }
+
+    .aboutImage {
+        &::after {
+            display: none;
+        }
+    }
+}
+
+ @media only screen and (max-width: 925px) {
+    .about {
+        height: auto;
+    }
+    .aboutImageAndText {
+        flex-direction: column;
+        justify-content: flex-start;
+        .aboutImage {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .aboutText {
+            width: 100%;
+        }
+    }
+
+    img.headshot {
+    width: 200px;
+    height:300px;
+    margin-top: 0px;
+    }
+ }
+
+
 
